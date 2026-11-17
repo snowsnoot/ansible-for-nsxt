@@ -1107,7 +1107,7 @@ def main():
     if not updated:
       # add the node
       if module.check_mode:
-        module.exit_json(changed=True, debug_out=str(json.dumps(logical_switch_params)), id='12345')
+        module.exit_json(changed=True, debug_out=str(json.dumps(transport_node_params)), id='12345')
 
       if body["node_deployment_info"].__contains__('host_credential'):
         if body["node_deployment_info"]["host_credential"].__contains__("thumbprint"):

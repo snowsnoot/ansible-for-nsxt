@@ -295,7 +295,7 @@ def main():
     if not updated:
       # add the node
       if module.check_mode:
-          module.exit_json(changed=True, debug_out=str(json.dumps(logical_switch_params)), id='12345')
+          module.exit_json(changed=True, debug_out=str(json.dumps(transport_node_profile_params)), id='12345')
       request_data = json.dumps(body)
       try:
           if not transport_node_profile_id:
